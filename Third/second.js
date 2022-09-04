@@ -11,8 +11,10 @@ let beers = []
             console.log(beers)
                 const nameOfBeer = document.getElementById('name');
                 const aboutBeer = document.getElementById('aboutBig');
+                
                 nameOfBeer.innerText = beers[0].name;
-                aboutBeer.innerText = beers[0].name
+                aboutBeer.innerText = beers[0].name;
+
                 const picOfBeer = document.getElementById('pictureLeft');
                 const smallPicOfBeer= document.getElementById("smallPictureLeftDown")
                 
