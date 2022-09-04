@@ -206,8 +206,13 @@ body {
     padding-bottom: 5px;
     
   }
+  .pictureLeft{
+    width: 40%;
+    height: 700px;
+  }
   .img {
      height: 600px;
+     width: 150px;
      margin-top: 30px;
      margin-left: 250px;
      
@@ -230,4 +235,35 @@ body {
 
   border: 2px solid;
     border-color: #1f781f;
+  }
+  .eigteenPlus {
+    margin-top: -30px;
+    margin-left: 210px;
+    width: 20vh;
+    height: 20vh;
+  }
+  .rightPart {
+    float: right;
+    
+  }
+  .countItem {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 40px;
+    width: 200px;
+    border: 2px solid;
+    border-color: #25ba25;
+    border-radius: 20%;
+    margin-right: 350px;
+    margin-top: -900px;
+    gap: 20px;
+  }
+  .areAvaible {
+    color: #25ba25;
+    margin-top: 5px;
+  }
+  .checkLogo {
+    height: 30px;
+     margin-top: 5px;
+     margin-left: 20px;
   }
