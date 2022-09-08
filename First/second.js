@@ -1,4 +1,7 @@
 let beers = [];
+let cart = [];
+JSON.parse(localStorage.getItem('cart')).forEach(el => cart.push(el));
+
 
         function requestData() {
             fetch('https://api.punkapi.com/v2/beers/'+ localStorage.getItem('idBeer')).then(data => data.json())
@@ -38,9 +41,14 @@ let beers = [];
                 img3.classList.add('img3');
                 img3.src = beers[0].image_url;
                 sellerPic.appendChild(img3);
+                
         }
 
         requestData();
         function addToCart() {
-            console.log('addToCart')
+            cart.push(localStorage.getItem('idBeer'))
+            localStorage.setItem('cart', JSON.stringify(cart))
+        }
+        function cartFun() {
+            window.location.href = 'cart.html';
         }

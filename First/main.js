@@ -39,3 +39,6 @@ let mainLink = 'https://api.punkapi.com/v2/beers?page=' + `${pageId}` + '&per_pa
         }
 
         requestData();
+       function cartFun() {
+            window.location.href = 'cart.html';
+        }
