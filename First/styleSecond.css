@@ -1,6 +1,6 @@
 .main {
 width: 100%;
-height: 4000px;
+height: 1700px;
 }
 .header {
     width:100%;
@@ -254,29 +254,6 @@ body {
     float: right;
     
   }
-  .countItem {
-    display: flex;
-    flex-flow: row nowrap;
-    height: 30px;
-    width: 200px;
-    border: 2px solid;
-    border-color: #25ba25;
-    border-radius: 10%;
-    margin-right: 350px;
-    margin-top: -920px;
-    gap: 30px;
-  }
-  .areAvaible {
-    color: #25ba25;
-    margin-top: 0px;
-    font-family: sans-serif;
-  }
-  .checkLogo {
-    height: 15px;
-     margin-top: 7px;
-     margin-left: 30px;
-     
-  }
   .aboutL {
     display: flex;
     flex-flow: row nowrap;
@@ -298,4 +275,134 @@ color: black;
     margin-left: 30px;
     width: 300px;
     margin-top: 15px;
+  }
+  .countItem {
+    display: flex;
+    flex-flow: row nowrap;
+    height: 30px;
+    width: 200px;
+    border: 2px solid;
+    border-color: #25ba25;
+    border-radius: 5px;
+    margin-right: 450px;
+    gap: 30px;
+  }
+  .areAvaible {
+    color: #25ba25;
+    margin-top: 0px;
+    font-family: sans-serif;
+  }
+  .checkLogo {
+    height: 15px;
+     margin-top: 7px;
+     margin-left: 30px;
+     
+  }
+  .buyPrice {
+    border: 1px solid;
+    border-color: #cfcbcb;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 5px;
+    height: 60px;
+    margin-right: 30px;
+    
+  }
+  .addToCart:hover{
+    background-color: #ede8e8;
+    border-radius: 5px;
+  }
+  .addToCart {
+    width: 30px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 30px;
+    
+  }
+  .price {
+    font-family: sans-serif;
+    color: rgb(241, 85, 85);
+    font-size: 40px;
+    margin-left: 30px;
+  }
+  .dollar {
+    font-family: sans-serif;
+    color: rgb(241, 85, 85);
+    font-size: 30px;
+    margin-top: 3px;
+    margin-left: 5px;
+  }
+  .seller {
+    border: 1px solid;
+    border-color: #cfcbcb;
+    margin-top: 20px;
+    display: flex;
+    flex-flow: row nowrap;
+    border-radius: 5px;
+    height: 60px;
+    margin-right: 30px; 
+    gap:30px
+  }
+  .BREWDOG {
+    margin-top: 15px;
+    margin-left: 30px;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  .img3 {
+    width: 20px;
+    height: 40px;
+    margin-top: 10px;
+
+    margin-left: 20px;
+  }
+  .BREW {
+    margin-top: 15px;
+   
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bolder;
+  }
+  .per {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+  .unit {
+    font-family: sans-serif;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bolder;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .footer {
+    height: 40px;
+  }
+  
+  .footer-logo {
+    font-size: 20px;
+  }
+  .header2 {
+    background-color: black;
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-block: 1em;
   }

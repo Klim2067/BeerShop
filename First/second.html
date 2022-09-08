@@ -5,7 +5,7 @@
 	<title> Beer Shop </title>
 </head>
 <body>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="styleSecond.css">
 <script src="second.js"> 
 </script>
 <div class="main">
@@ -13,7 +13,7 @@
 	<header class="header">
         <img class='header__item more-info' src='https://icon-library.com/images/hamburger-navigation-icon/hamburger-navigation-icon-0.jpg' width='45px' height='30px'></img>
        <div class='logo'><img class='header__item header-beer' src='https://images.punkapi.com/v2/192.png' width='20px' height='50px'></img>
-       <div class="header__item main-logo">PUNK BEER</div></div>
+       <div class="header__item main-logo">BREWDOG</div></div>
        <div class="header__item catalog"><span>Catalog</span></div>
        <div class="header__item search"><img class='header__item header-beer' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png' width='20px' height='20px'></img>
 <input class='search-input' type='text' placeholder='I am searching for...'></input>
@@ -47,6 +47,30 @@
 </div>
 
 <div class="picturesPriceOther">
+	<div class="rightPart">
+		<div class="countItem">
+			<img class="checkLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Green-checkmark.svg/1957px-Green-checkmark.svg.png">
+	<div class="areAvaible">  Are avaible</div>
+	
+		</div>
+	
+		<div class="buyPrice">
+			<div class="price" id="price"></div> <div class="dollar">$</div> 
+			<div class="per"> per </div>
+			<div class="unit" id="unit"></div>
+			
+			<img onclick="addToCart()" class="addToCart" src="https://uxwing.com/wp-content/themes/uxwing/download/e-commerce-currency-shopping/buy-icon.png">
+
+		</div>
+		<div class="seller">
+			<div class="BREWDOG">Seller:</div> <div class="BREW">BREWDOG</div>
+			<div class="picSeller" id="picSeller"></div>
+		</div>
+		<div class="aboutDamage"></div>
+		<div class="delivery"></div>
+		<div class="payment"></div>
+		<div class="guarantee"></div>
+	</div>
 	<div class="pictureLeft" id="pictureLeft">
 		
 	</div>
@@ -57,29 +81,14 @@
 	<div class="originalSmallLeft"> 
 		<img class="eigteenPlus" src="https://assets.stickpng.com/thumbs/5aa25f5b9fc609199d0ff1bf.png">
 	</div>
-<div class="rightPart">
-	<div class="countItem">
-		<img class="checkLogo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Green-checkmark.svg/1957px-Green-checkmark.svg.png">
-<div class="areAvaible">  Are avaible</div>
 
-	</div>
-
-	<div class="buy&Price"></div>
-	<div class="seller"></div>
-	<div class="aboutDamage"></div>
-	<div class="delivery"></div>
-	<div class="payment"></div>
-	<div class="guarantee"></div>
-</div>
 </div>
 <div class="about&comments">
 
 <div class="aboutL">
 	<div class="about">About</div> <div class="aboutBig" id="aboutBig"></div>
 </div>
-	<div class="aboutSmall">BrewDog is a multinational brewery and pub chain based in Ellon, Scotland.
-		 With production of over 800,000hl, BrewDog claim to be the "#1 Craft Brewer in Europe".
-		 It was founded in 2007 by James Watt and Martin Dickie, who together own 46% of the company.</div>
+	<div class="aboutSmall" id="aboutSmall"></div>
 <div class="characteristicsL"></div>
 <div class="characteristicsList"></div>
 <div class="commentsR"></div>
@@ -94,31 +103,14 @@
 	<div class="page"></div>
 
  </div>
-
- <div class="downPartOfPage">
-
-<div class="donwloadApp"></div>
-
-<div class="ourSoc&other">
-
-	<div class="soc"></div>
-	<div class="infoList"></div>
-	<div class="help"></div>
-    <div class="service"></div>
-	<div class="partners"></div>
-
-</div>
-
-<div class="lastDown">
-
-	<div class="twoPicturesDownLeft"></div>
-	<div class="tmRight"></div>
-
-</div>
- </div>
 </div>
 </div>
-
+<footer class='header2 footer'>
+	<div class='logo'>
+		 <div class="header__item footer-logo">BREWDOG</div>
+		   <img class='header__item header-beer' src='https://images.punkapi.com/v2/192.png' width='15px' height='34px'></img>
+		 </div>
+  </footer>
 
 
 
