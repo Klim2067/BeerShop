@@ -1,7 +1,8 @@
 
 let beers = [];
 let pageId = 1;
-let sum = 1;
+let input = [];
+let searchInput = '';
 
         function requestData() {
 let mainLink = 'https://api.punkapi.com/v2/beers?page=' + `${pageId}` + '&per_page=35'; 
@@ -27,13 +28,11 @@ let mainLink = 'https://api.punkapi.com/v2/beers?page=' + `${pageId}` + '&per_pa
                 
                 card.appendChild(img);
                 card.appendChild(header);
-                card.id = sum;
-                sum+=1;
+                card.id = beer.id;
                 card.addEventListener('click', () => {
                     localStorage.setItem('idBeer', card.id)
             window.location.href = "second.html";      
                 });
-
                 container.appendChild(card)
             })
         }
@@ -41,4 +40,15 @@ let mainLink = 'https://api.punkapi.com/v2/beers?page=' + `${pageId}` + '&per_pa
         requestData();
        function cartFun() {
             window.location.href = 'cart.html';
+        }
+
+        function searchPage() {
+            searchInput = document.querySelector('input').value;
+            input.push(searchInput);
+            localStorage.setItem('searched', JSON.stringify(input));
+            window.location.href = 'search.html';
+        }
+
+        function catalog() {
+            window.location.href = 'main.html';
         }

@@ -1,7 +1,8 @@
 let beers = [];
 let cart = [];
+if(localStorage.getItem('cart')!==null) {
 JSON.parse(localStorage.getItem('cart')).forEach(el => cart.push(el));
-
+}
 
         function requestData() {
             fetch('https://api.punkapi.com/v2/beers/'+ localStorage.getItem('idBeer')).then(data => data.json())
@@ -51,4 +52,8 @@ JSON.parse(localStorage.getItem('cart')).forEach(el => cart.push(el));
         }
         function cartFun() {
             window.location.href = 'cart.html';
+        }
+
+        function catalog() {
+            window.location.href = 'main.html';
         }

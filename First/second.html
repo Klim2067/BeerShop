@@ -11,10 +11,17 @@
 <div class="main">
 
 	<header class="header">
-        <img class='header__item more-info' src='https://icon-library.com/images/hamburger-navigation-icon/hamburger-navigation-icon-0.jpg' width='45px' height='30px'></img>
+		<div class="dropdown">
+			<img class='header__item more-info' src='https://icon-library.com/images/hamburger-navigation-icon/hamburger-navigation-icon-0.jpg' width='45px' height='30px'></img>
+			<div class="dropdown-content">
+			   <a href="main.HTML">Main page</a>
+			   <a href="search.html">Search page</a>
+			   <a href="cart.html">Cart</a>
+			 </div>
+		   </div>
        <div class='logo'><img class='header__item header-beer' src='https://images.punkapi.com/v2/192.png' width='20px' height='50px'></img>
        <div class="header__item main-logo">BREWDOG</div></div>
-       <div class="header__item catalog"><span>Catalog</span></div>
+       <div class="header__item catalog"  onclick="catalog()"><span>Catalog</span></div>
        <div class="header__item search"><img class='header__item header-beer' src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Search_Icon.svg/500px-Search_Icon.svg.png' width='20px' height='20px'></img>
 <input class='search-input' type='text' placeholder='I am searching for...'></input>
 <span class='vertical-line'></span>
